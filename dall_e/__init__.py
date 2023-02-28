@@ -5,7 +5,7 @@ import torch.nn as nn
 from dall_e.encoder import Encoder
 from dall_e.decoder import Decoder
 from dall_e.utils   import map_pixels, unmap_pixels
-
+# we added Load function 
 def load_model(path: str, device: torch.device = None) -> nn.Module:
     if path.startswith('http://') or path.startswith('https://'):
         resp = requests.get(path)

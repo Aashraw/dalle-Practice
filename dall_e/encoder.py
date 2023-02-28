@@ -9,6 +9,7 @@ from collections  import OrderedDict
 from functools    import partial
 from dall_e.utils import Conv2d
 
+# created a new class 
 @attr.s(eq=False, repr=False)
 class EncoderBlock(nn.Module):
 	n_in:     int = attr.ib(validator=lambda i, a, x: x >= 1)
